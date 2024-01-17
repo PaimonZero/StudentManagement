@@ -3,7 +3,6 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class Student {
     private String studentId;
@@ -11,6 +10,12 @@ public class Student {
     private String semster;
     private List<Course> listCourse = new ArrayList<>();
 
+    public Student(String studentId, String studentName, String semster) {
+        this.studentId = studentId;
+        this.studentName = studentName;
+        this.semster = semster;
+    }
+    
     public String getStudentId() {
         return studentId;
     }
