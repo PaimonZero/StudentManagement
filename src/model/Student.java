@@ -1,20 +1,20 @@
 
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Student {
-    private int studentId;
+    private String studentId;
     private String studentName;
     private String semster;
-    private List<Course> courseName = new ArrayList<>();
+    private Map<Course, Integer> courseName = new HashMap<>();
 
-    public int getStudentId() {
+    public String getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
+    public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
 
@@ -34,11 +34,11 @@ public class Student {
         this.semster = semster;
     }
 
-    public List<Course> getCourseName() {
+    public Map<Course, Integer> getCourseName() {
         return courseName;
     }
 
-    public void setCourseName(List<Course> courseName) {
+    public void setCourseName(Map<Course, Integer> courseName) {
         this.courseName = courseName;
     }
 
@@ -46,4 +46,5 @@ public class Student {
     public String toString() {
         return "Student{" + "studentId=" + studentId + ", studentName=" + studentName + ", semster=" + semster + ", courseName=" + courseName + '}';
     }
+
 }

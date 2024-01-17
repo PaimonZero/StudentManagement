@@ -2,15 +2,14 @@
 package model;
 
 public class Course {
-    private int courseId;
+    private String courseId;
     private String courseName;
-    private int courseCount;
 
-    public int getCourseId() {
+    public String getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(int courseId) {
+    public void setCourseId(String courseId) {
         this.courseId = courseId;
     }
 
@@ -22,16 +21,9 @@ public class Course {
         this.courseName = courseName;
     }
 
-    public int getCourseCount() {
-        return courseCount;
-    }
-
-    public void setCourseCount(int courseCount) {
-        this.courseCount = courseCount;
-    }
-
     @Override
     public String toString() {
-        return "Course{" + "courseId=" + courseId + ", courseName=" + courseName + ", courseCount=" + courseCount + '}';
+        return "Course{" + "courseId=" + courseId + ", courseName=" + courseName + '}';
     }
+
 }
