@@ -7,13 +7,13 @@ import java.util.List;
 public class Student {
     private String studentId;
     private String studentName;
-    private String semster;
+    private String semester;
     private List<Course> listCourse = new ArrayList<>();
 
     public Student(String studentId, String studentName, String semster) {
         this.studentId = studentId;
         this.studentName = studentName;
-        this.semster = semster;
+        this.semester = semster;
     }
     
     public String getStudentId() {
@@ -32,12 +32,12 @@ public class Student {
         this.studentName = studentName;
     }
 
-    public String getSemster() {
-        return semster;
+    public String getSemester() {
+        return semester;
     }
 
-    public void setSemster(String semster) {
-        this.semster = semster;
+    public void setSemester(String semster) {
+        this.semester = semster;
     }
 
     public List<Course> getListCourse() {
@@ -50,7 +50,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" + "studentId=" + studentId + ", studentName=" + studentName + ", semster=" + semster + ", listCourse=" + listCourse + '}';
+        return "Student{" + "studentId=" + studentId + ", studentName=" + studentName + ", semester=" + semester + ", listCourse=" + listCourse + '}';
     }
-
+    
 }
