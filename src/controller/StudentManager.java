@@ -16,7 +16,6 @@ public class StudentManager {
         String crName = val.getString(">Enter course name: ");
         String crId = val.getString(">Enter course Id: ");
         Course newCourse = new Course();
-        
     }
             
             
