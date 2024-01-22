@@ -141,7 +141,7 @@ public class StudentManager {
             // Hiển thị kết quả
             System.out.println("Results:");
             for (Student student : searchResults) {
-                System.out.print("Student Name: " + student.getStudentName() +
+                System.out.print("ID: "+ student.getStudentId() +", Student Name: " + student.getStudentName() +
                                    ", Semester: " + student.getSemester() +
                                    ", Course Name: "); // cần điều chỉnh để in hợp lý
                 printCourse(student.getListCourse());
